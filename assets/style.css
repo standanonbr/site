@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fafafa; --muted:#666; --accent:#b8860b; }
+@media (prefers-color-scheme: dark) { :root { --fg:#eee; --bg:#111; --muted:#999; --accent:#f5c542; } }
+body { font: 18px/1.65 system-ui, sans-serif; color: var(--fg); background: var(--bg); margin: 0; }
+header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1rem; }
+header { display: flex; justify-content: space-between; align-items: baseline; }
+nav a { margin-left: 1rem; }
+a { color: var(--accent); }
+.brand { font-weight: 700; font-size: 1.3rem; text-decoration: none; }
+.meta, time, footer { color: var(--muted); font-size: .9rem; }
+.posts, .mirrors { list-style: none; padding: 0; }
+.posts li { margin: 1.5rem 0; } .posts time { margin-left: .5rem; }
+#banner { background: var(--accent); color: #000; padding: .6rem 1rem; text-align: center; font-size: .95rem; }
+#banner a { color: #000; margin: 0 .4rem; }
+img { max-width: 100%; height: auto; }
